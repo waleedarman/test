@@ -130,7 +130,7 @@ label {
 }
 
 .submit-btn,
-.rest-btn {
+.reset-btn {
     padding: 10px 20px;
     cursor: pointer;
     border: none;
@@ -147,7 +147,7 @@ label {
     background-color: #004d40;
 }
 
-.rest-btn {
+.reset-btn {
     margin-left: 80px;
     background-color: crimson;
 }
@@ -176,14 +176,20 @@ label {
 }
 
 @media (max-width: 768px) {
+  
     .contact-container {
         margin-bottom: 80px;
-        margin-left: 50px;
+        margin-left: 80px;
     }
 
     .contact {
         flex-direction: row;
         align-items: flex-end;
+        
+    }
+    .container{
+        width: 150%;
+
     }
 
     .form-group label {
@@ -203,10 +209,11 @@ label {
     }
 
     .form {
-        margin-top: 100px;
+        
+       margin-right: -60px;
     }
 
-    .rest-btn {
+    .reset-btn {
         position: relative;
         left: 100px;
         bottom: 35px;
@@ -216,4 +223,7 @@ label {
         position: relative;
         right: 100px;
     }
-}
+    
+
+
+} 
