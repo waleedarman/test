@@ -166,11 +166,10 @@ label {
     flex-direction: column;
 }
 
-
 @media (max-width: 650px) {
     .contact-info {
         margin-bottom: 80px;
-        margin-left: 50px;
+        margin-left: 0; /* تحريك إلى أقصى اليسار */
     }
 
     .contact-section {
@@ -191,7 +190,7 @@ label {
 
     .form-group label {
         width: 1%;
-        margin-left: 20px;
+        margin-left: 0; /* تحريك النص إلى أقصى اليسار */
         font-size: 16px;
     }
 
@@ -201,7 +200,7 @@ label {
         width: 85%;
         padding: 14px;
         font-size: 15px;
-        margin-left: 80px;
+        margin-left: 0; /* تحريك إلى أقصى اليسار */
     }
 
     .contact-form {
@@ -212,7 +211,7 @@ label {
 
     .button-group {
         display: flex;
-       padding-left: 40px;
+        padding-left: 0; /* تحريك الأزرار إلى أقصى اليسار */
         width: 100%;
     }
 
@@ -223,8 +222,6 @@ label {
         font-size: 14px;
         padding: 8px;
         position: relative;
-        left: 60px;
+        left: 0; /* تحريك إلى أقصى اليسار */
     }
 }
-
-
