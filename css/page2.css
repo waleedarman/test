@@ -234,8 +234,8 @@ label {
  @media (max-width: 780px) {
     .contact-info {
        position: relative;
-       bottom: 350px;
-       right: 200px;
+       bottom: 280px;
+       right: 500px;
     }
 
     .contact-section {
@@ -255,6 +255,11 @@ label {
         width: 1%;
         margin-left: 20px;
         font-size: 16px;
+    }
+    .contact-form{
+
+        position: relative;
+        right: 400px;
     }
 
     .form-group input,
