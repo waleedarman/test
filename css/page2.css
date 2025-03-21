@@ -166,21 +166,16 @@ label {
     flex-direction: column;
 }
 
-@media (max-width: 780px) {
+
+/* @media (max-width: 780px) {
     .contact-info {
         margin-bottom: 80px;
-        margin-left: auto; /* يزيل أي تأثير للإزاحة من اليسار */
-        margin-right: 0; /* يجعل العنصر يلتصق بأقصى اليمين */
-        padding-right: 20px; /* إضافة بعض المسافة من اليمين */
-        text-align: right; /* محاذاة النص إلى اليمين */
-        position: absolute; /* تثبيت العنصر ليبقى في مكانه */
-        right: 0; /* دفع العنصر إلى أقصى اليمين */
+        margin-left: 50px;
     }
 
     .contact-section {
-        flex-direction: row; /* توزيع العناصر أفقيًا */
-        justify-content: flex-end; /* محاذاة جميع العناصر إلى أقصى اليمين */
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: flex-end;
     }
 
     .main-container {
@@ -192,7 +187,12 @@ label {
         display: flex;
         flex-direction: row;
         width: 100%;
-        justify-content: flex-end; /* جعل العناصر داخل الفورم تبدأ من اليمين */
+    }
+
+    .form-group label {
+        width: 1%;
+        margin-left: 20px;
+        font-size: 16px;
     }
 
     .form-group input,
@@ -201,28 +201,33 @@ label {
         width: 85%;
         padding: 14px;
         font-size: 15px;
-        margin-right: 0; /* إزالة أي إزاحة من اليمين */
+        margin-left: 80px;
     }
 
     .contact-form {
+        margin-right: 0;
         width: 95%;
         max-width: 550px;
-        margin-right: 0;
-        text-align: right; /* جعل النصوص داخل الفورم محاذية لليمين */
     }
 
     .button-group {
         display: flex;
-        justify-content: flex-end; /* جعل الأزرار تلتصق بأقصى اليمين */
-        padding-right: 20px;
+       padding-left: 40px;
+        width: 100%;
     }
 
     .reset-button,
     .submit-button {
         width: 30%;
+        margin-left: 0;
         font-size: 14px;
         padding: 8px;
         position: relative;
-        right: 0; /* إزالة أي إزاحة إضافية */
+        left: 60px;
     }
 }
+
+ */
+
+
+ 
