@@ -169,16 +169,17 @@ label {
 @media (max-width: 780px) {
     .contact-info {
         margin-bottom: 80px;
-        margin-left: 0; /* إزالة أي إزاحة غير ضرورية */
-        padding-left: 0; /* التأكد من عدم وجود مسافة من اليسار */
-        text-align: left; /* محاذاة النص لليسار */
-        position: absolute; /* تثبيت العنصر بحيث لا يتحرك */
-        left: 0; /* جعله يلتصق بأقصى اليسار */
+        margin-left: auto; /* يزيل أي تأثير للإزاحة من اليسار */
+        margin-right: 0; /* يجعل العنصر يلتصق بأقصى اليمين */
+        padding-right: 20px; /* إضافة بعض المسافة من اليمين */
+        text-align: right; /* محاذاة النص إلى اليمين */
+        position: absolute; /* تثبيت العنصر ليبقى في مكانه */
+        right: 0; /* دفع العنصر إلى أقصى اليمين */
     }
 
     .contact-section {
-        flex-direction: row; /* جعله أفقيًا */
-        justify-content: flex-start; /* التأكد من محاذاته لأقصى اليسار */
+        flex-direction: row; /* توزيع العناصر أفقيًا */
+        justify-content: flex-end; /* محاذاة جميع العناصر إلى أقصى اليمين */
         align-items: flex-start;
     }
 
@@ -191,6 +192,7 @@ label {
         display: flex;
         flex-direction: row;
         width: 100%;
+        justify-content: flex-end; /* جعل العناصر داخل الفورم تبدأ من اليمين */
     }
 
     .form-group input,
@@ -199,19 +201,20 @@ label {
         width: 85%;
         padding: 14px;
         font-size: 15px;
-        margin-left: 0; /* إزالة الإزاحة */
+        margin-right: 0; /* إزالة أي إزاحة من اليمين */
     }
 
     .contact-form {
         width: 95%;
         max-width: 550px;
-        margin-left: 0;
+        margin-right: 0;
+        text-align: right; /* جعل النصوص داخل الفورم محاذية لليمين */
     }
 
     .button-group {
         display: flex;
-        justify-content: flex-start; /* محاذاة الأزرار لأقصى اليسار */
-        padding-left: 0;
+        justify-content: flex-end; /* جعل الأزرار تلتصق بأقصى اليمين */
+        padding-right: 20px;
     }
 
     .reset-button,
@@ -220,6 +223,6 @@ label {
         font-size: 14px;
         padding: 8px;
         position: relative;
-        left: 0; /* إزالة أي إزاحة إضافية */
+        right: 0; /* إزالة أي إزاحة إضافية */
     }
 }
