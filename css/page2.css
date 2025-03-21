@@ -165,16 +165,17 @@ label {
     display: flex;
     flex-direction: column;
 }
-
-@media (max-width: 650px) {
+@media (max-width: 780px) {
     .contact-info {
         margin-bottom: 80px;
-        margin-left: 0; /* تحريك إلى أقصى اليسار */
+        margin-left: 0; /* إزالة الهامش الإضافي */
+        padding-left: 20px; /* بدلاً من ذلك استخدم Padding */
+        text-align: left; /* تأكد أن النص محاذٍ لليسار */
     }
 
     .contact-section {
-        flex-direction: row;
-        align-items: flex-end;
+        flex-direction: column; /* تغيير التوزيع لجعله عامودي بدلاً من أفقي */
+        align-items: flex-start; /* تأكد من محاذاته لليسار */
     }
 
     .main-container {
@@ -184,44 +185,36 @@ label {
 
     .form-group {
         display: flex;
-        flex-direction: row;
+        flex-direction: column; /* تغيير المحاذاة إلى عامودية */
         width: 100%;
-    }
-
-    .form-group label {
-        width: 1%;
-        margin-left: 0; /* تحريك النص إلى أقصى اليسار */
-        font-size: 16px;
     }
 
     .form-group input,
     .form-group textarea {
-        flex: 1;
-        width: 85%;
+        width: 100%; /* اجعل العناصر تأخذ العرض بالكامل */
         padding: 14px;
         font-size: 15px;
-        margin-left: 0; /* تحريك إلى أقصى اليسار */
+        margin-left: 0; /* إزالة الهامش الإضافي */
     }
 
     .contact-form {
-        margin-right: 0;
-        width: 95%;
+        width: 100%;
         max-width: 550px;
+        margin-left: 0; /* إزالة أي إزاحة غير ضرورية */
     }
 
     .button-group {
         display: flex;
-        padding-left: 0; /* تحريك الأزرار إلى أقصى اليسار */
-        width: 100%;
+        justify-content: flex-start; /* جعل الأزرار تبدأ من اليسار */
+        padding-left: 20px;
     }
 
     .reset-button,
     .submit-button {
         width: 30%;
-        margin-left: 0;
         font-size: 14px;
         padding: 8px;
         position: relative;
-        left: 0; /* تحريك إلى أقصى اليسار */
+        left: 0; /* إزالة الإزاحة */
     }
 }
