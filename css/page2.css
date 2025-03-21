@@ -165,17 +165,21 @@ label {
     display: flex;
     flex-direction: column;
 }
+
 @media (max-width: 780px) {
     .contact-info {
         margin-bottom: 80px;
-        margin-left: 0; /* إزالة الهامش الإضافي */
-        padding-left: 20px; /* بدلاً من ذلك استخدم Padding */
-        text-align: left; /* تأكد أن النص محاذٍ لليسار */
+        margin-left: 0; /* إزالة أي إزاحة غير ضرورية */
+        padding-left: 0; /* التأكد من عدم وجود مسافة من اليسار */
+        text-align: left; /* محاذاة النص لليسار */
+        position: absolute; /* تثبيت العنصر بحيث لا يتحرك */
+        left: 0; /* جعله يلتصق بأقصى اليسار */
     }
 
     .contact-section {
-        flex-direction: column; /* تغيير التوزيع لجعله عامودي بدلاً من أفقي */
-        align-items: flex-start; /* تأكد من محاذاته لليسار */
+        flex-direction: row; /* جعله أفقيًا */
+        justify-content: flex-start; /* التأكد من محاذاته لأقصى اليسار */
+        align-items: flex-start;
     }
 
     .main-container {
@@ -185,28 +189,29 @@ label {
 
     .form-group {
         display: flex;
-        flex-direction: column; /* تغيير المحاذاة إلى عامودية */
+        flex-direction: row;
         width: 100%;
     }
 
     .form-group input,
     .form-group textarea {
-        width: 100%; /* اجعل العناصر تأخذ العرض بالكامل */
+        flex: 1;
+        width: 85%;
         padding: 14px;
         font-size: 15px;
-        margin-left: 0; /* إزالة الهامش الإضافي */
+        margin-left: 0; /* إزالة الإزاحة */
     }
 
     .contact-form {
-        width: 100%;
+        width: 95%;
         max-width: 550px;
-        margin-left: 0; /* إزالة أي إزاحة غير ضرورية */
+        margin-left: 0;
     }
 
     .button-group {
         display: flex;
-        justify-content: flex-start; /* جعل الأزرار تبدأ من اليسار */
-        padding-left: 20px;
+        justify-content: flex-start; /* محاذاة الأزرار لأقصى اليسار */
+        padding-left: 0;
     }
 
     .reset-button,
@@ -215,6 +220,6 @@ label {
         font-size: 14px;
         padding: 8px;
         position: relative;
-        left: 0; /* إزالة الإزاحة */
+        left: 0; /* إزالة أي إزاحة إضافية */
     }
 }
